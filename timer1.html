@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 170px;
+        width: 350px;
+        background-image: url('images.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white; /* Added text color for better visibility */
+    }
+    #container{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    #timer{
+        border: 2px solid black;
+        height: 95px;
+        width: 180px;
+    }
+    #buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    #third{
+        margin-top: 20px;
+    }
+    h1{
+        padding-left: 39px;
+        padding-top: 10px;
+        gap: 10px;
+    }
+    #third{
+        margin-top: 20px;
+    }
+    larger-text{
+            font-family: Arial, sans-serif; /* Example font family */
+            font-size: 16px; /* Example initial font size */
+        }
+
+        /* Style to increase font size */
+    .larger-text {
+        font-size: 35px; /* Example increased font size */
+    }
+    #hello{
+        font-size: 20px;
+    }  
+</style>
+<body>
+    <h1 id="hello"><strong><em><u>WANT TO MAKE CHANGES?</u></em></strong></h1>
+    <div id="container">
+        <div id="timer">
+            <h1 id="activeTimer">00:00:00</h1>
+        </div>
+        <div id="buttons">
+            <a href="timer.html" target="_self"><button id="changeTimer">CHANGE TIMER</button></a>
+            <a href="popup.html" target="_self"><button id="delTimer">DELETE TIMER</button></a>
+        </div>
+    </div>
+    <script src="app2.js"></script>
+    
+</body>
+</html>
